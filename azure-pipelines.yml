@@ -8,8 +8,8 @@ resources:
   repositories:
   - repository: VulnerableWebApp
     type: github
-    endpoint: metalstormbass
-    name: metalstormbass/VulnerableWebApp
+    endpoint: MatthBusby
+    name: MatthBusby/VulnerableWebApp
 
 stages:
   - stage: 
