@@ -28,7 +28,7 @@ stages:
               VulnerableAzure-AzurePipeline/shiftleft iac-assessment -r 201981 --path VulnerableAzure-AzurePipeline/
               
               #Run ShiftLeft against the VulnerableWebApp project
-              VulnerableAzure-AzurePipeline/shiftleft codescan -s VulnerableWebApp/
+              VulnerableAzure-AzurePipeline/shiftleft code-scan -s VulnerableWebApp/
               
               #Download the docker image used in the project and scan with Shift Left
               docker pull bkimminich/juice-shop
