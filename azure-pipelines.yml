@@ -64,8 +64,9 @@ stages:
       
        - bash: |
                 
-                sed -i "/token/c\   token\ = \"$TERRAFORM_API_KEY\"" main.tf                            
-                cat main.tf
+                sed -i "/token/c\ token\ = \"$TERRAFORM_API_KEY\"" main.tf
+                sed -i "/organization/c\ organization\ = \"$TF_ORGANIZATION\"" main.tf
+                sed -i "/name/c\ name\ = \"$TF_WORKSPACE\"" main.tf
                 terraform init
                 terraform plan
                 rm -r ./.terraform
